@@ -31,37 +31,3 @@
 
 
 
-#### Psedocode.
-char string[1000]\
-define UART Serial1\
-IntervalTimer timer\
-void setup(void)\
-{ \
-timer.begin (function_to_run,interval_to_run_it)\
-serial.begin(9600)\
-UART.begin(9600)\
-delay (2000)\
-}\
-void loop(void)\
-{\
-if not read()\
-\
-char tmpchar=''\
-tmpchar = serial.read\
-serial.print(tmpchar)\
-\
-else\
-\
-serial.print(string)\
-
-}\
-
-int read (char * string)\
-{\
-while UART.available\
-{\
-string = string + UART.read()\
-}\
-### ignore the \n requirement
-return 0
-}\
